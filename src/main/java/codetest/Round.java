@@ -2,7 +2,7 @@ package codetest;
 
 public class Round {
 
-    public double roundFunction(double number) {
+    public static double roundFunction(double number) {
         // Multiply the number by 100 to keep two decimal places
         int roundedNumber = (int) (number * 100);
 

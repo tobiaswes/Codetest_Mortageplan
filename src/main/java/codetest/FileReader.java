@@ -27,7 +27,7 @@ public class FileReader {
                         String[] fields = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
 
                         if (fields.length == 4) {
-                            String name = fields[0].trim();
+                            String name = fields[0].replaceAll("[\",]", " ").trim();
                             double totalLoan = Double.parseDouble(fields[1].trim());
                             double interest = Double.parseDouble(fields[2].trim());
                             int years = Integer.parseInt(fields[3].trim());

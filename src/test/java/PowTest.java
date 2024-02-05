@@ -8,9 +8,7 @@ public class PowTest {
     @Test
     public void testPowPositiveExponent(){
 
-        Pow pow = new Pow();
-
-        double result = pow.powerFunction(2,4);
+        double result = Pow.powerFunction(2,4);
 
         assertEquals(16, result, 0.001);
         assertNotEquals(8, result);
@@ -19,9 +17,7 @@ public class PowTest {
     @Test
     public void testPowZeroBase(){
 
-        Pow pow = new Pow();
-
-        double result = pow.powerFunction(0,5);
+        double result = Pow.powerFunction(0,5);
 
         assertEquals(0, result, 0.001);
         assertNotEquals(5, result);
@@ -30,9 +26,7 @@ public class PowTest {
     @Test
     public void testPowZeroExponent(){
 
-        Pow pow = new Pow();
-
-        double result = pow.powerFunction(7,0);
+        double result = Pow.powerFunction(7,0);
 
         assertEquals(1, result, 0.001);
         assertNotEquals(0, result);

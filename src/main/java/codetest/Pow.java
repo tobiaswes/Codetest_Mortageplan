@@ -2,7 +2,7 @@ package codetest;
 
 public class Pow {
 
-    public double powerFunction(double base, double exponent){
+    public static double powerFunction(double base, double exponent){
 
         if(exponent == 0){
             return 1;
