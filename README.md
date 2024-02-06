@@ -2,21 +2,23 @@
 
 This repository contains two branches: 'main' and 'optional'.
 
-## Main Branch
-
-The 'main' branch features a straightforward Mortgage Plan Calculator implemented in Java using Maven.
-It reads customer information from a text file, calculates the monthly payment for each customer and prints the results to the console.
-
 ### Prerequisites
 
 Make sure you have the following installed on your machine:
 
 - Java Development Kit 21
 - Maven
+- Docker
 - Clone the project
+
+## Main Branch
+
+The 'main' branch features a straightforward Mortgage Plan Calculator implemented in Java using Maven.
+It reads customer information from a text file, calculates the monthly payment for each customer and prints the results to the console.
 
 ### Getting Started
 Note: You need to be in the same directory as the project folder
+
 #### Build the project
 1.mvn clean install
 
@@ -31,6 +33,7 @@ in the web browser. Additionally, the web application provides functionality for
 
 ### Getting Started
 Note: You need to be in the same directory as the project folder
+
 ## Alternative 1
 
 #### Build the project
