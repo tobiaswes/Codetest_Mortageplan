@@ -16,7 +16,7 @@ Make sure you have the following installed on your machine:
 - Clone the project
 
 ### Getting Started
-
+Note: You need to be in the same directory as the project folder
 #### Build the project
 1.mvn clean install
 
@@ -30,7 +30,7 @@ It reads customer information from a text file, calculates the monthly payment f
 in the web browser. Additionally, the web application provides functionality for adding new customer prospects.
 
 ### Getting Started
-
+Note: You need to be in the same directory as the project folder
 ## Alternative 1
 
 #### Build the project
@@ -48,7 +48,8 @@ in the web browser. Additionally, the web application provides functionality for
 1.mvn clean install
 
 #### Build Docker image
-Give the image a name e.g., mortgageplan-image
+Note: You need to be in the same directory as the Dockerfile 
+Build the Docker image and give it a name e.g., mortgageplan-image
 
 2.docker build -t mortgageplan-image .
 
