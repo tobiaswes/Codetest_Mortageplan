@@ -3,6 +3,7 @@ package codetest;
 public class Round {
 
     public static double roundFunction(double number) {
+        //A rounding function that rounds thousandths to hundredths, for example, 100.355 becomes 100.360 after rounding.
         // Multiply the number by 100 to keep two decimal places
         int roundedNumber = (int) (number * 100);
 
