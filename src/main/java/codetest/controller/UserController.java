@@ -27,7 +27,7 @@ public class UserController {
     }
 
 
-    @GetMapping("/customers")
+    @GetMapping("/")
     public String displayCustomers(Model model) {
 
         customers.forEach(customer -> {
@@ -61,6 +61,6 @@ public class UserController {
 
         model.addAttribute("customers", customers);
 
-        return "redirect:customers";
+        return "redirect:/";
     }
 }
