@@ -1,7 +1,9 @@
 package codetest;
 
-import java.util.List;
+import org.springframework.stereotype.Component;
 
+import java.util.List;
+@Component
 public class PrintCustomer {
     private List<Customer> customers;
     MortgageCalculator mortgageCalculator = new MortgageCalculator();
@@ -12,13 +14,13 @@ public class PrintCustomer {
     public void print(){
         customers.forEach(customer -> {
             String monthlyPayment = mortgageCalculator.calcMonthlyPayment(
-                    customer.totalLoan(),
-                    customer.interest(),
-                    customer.years()
+                    customer.getTotalLoan(),
+                    customer.getInterest(),
+                    customer.getYears()
             );
-            System.out.println(customer.name() + " wants to borrow " +
-                    customer.totalLoan() + " € for a period of " +
-                    customer.years() + " years and pay " +
+            System.out.println(customer.getName() + " wants to borrow " +
+                    customer.getTotalLoan() + " € for a period of " +
+                    customer.getYears() + " years and pay " +
                     monthlyPayment + " € each month");
         });
     }

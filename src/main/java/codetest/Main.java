@@ -1,23 +1,11 @@
 package codetest;
 
-import java.util.List;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-
-        FileReader fileReader = new FileReader();
-
-        List<Customer> customers = fileReader.read("prospects.txt");
-
-        PrintCustomer printCustomer = new PrintCustomer();
-
-        printCustomer.setCustomers(customers);
-
-        printCustomer.print();
-
-
-
-
-
+        SpringApplication.run(Main.class, args);
     }
 }

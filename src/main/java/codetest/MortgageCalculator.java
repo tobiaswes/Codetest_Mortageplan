@@ -1,7 +1,9 @@
 package codetest;
 
-import java.text.DecimalFormat;
+import org.springframework.stereotype.Component;
 
+import java.text.DecimalFormat;
+@Component
 public class MortgageCalculator {
 
     public String calcMonthlyPayment(double totalLoan, double interest, int years){

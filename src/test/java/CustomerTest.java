@@ -10,10 +10,10 @@ public class CustomerTest {
 
         Customer customer = new Customer("Juha",5000, 4.2, 5);
 
-        String name = customer.name();
-        double totalLoan = customer.totalLoan();
-        double interest = customer.interest();
-        int years = customer.years();
+        String name = customer.getName();
+        double totalLoan = customer.getTotalLoan();
+        double interest = customer.getInterest();
+        int years = customer.getYears();
 
         assertEquals("Juha", name);
         assertEquals(5000.0, totalLoan, 0.001);

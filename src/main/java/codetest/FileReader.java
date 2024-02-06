@@ -1,12 +1,14 @@
 package codetest;
 
+import org.springframework.stereotype.Component;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 
-
+@Component
 public class FileReader {
     private List<Customer> customers;
 
